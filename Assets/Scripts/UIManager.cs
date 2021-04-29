@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     public GameObject progress1;
     public GameObject progress2;
 
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,16 +49,17 @@ public class UIManager : MonoBehaviour
         {
 
             display.text = "correct";
-            LevelComplete.SetActive(true);
-            option1Sprite.enabled = false;
-            option2Sprite.enabled = false;
+
+            
+            anim.SetBool("band", true);
+            
+           
            
             if ((GameManager.Instance.actionIndex + 1) < GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions.Length)
             {
                 display.text = "";
                 // yield return new WaitForSeconds(2);
-                option1Sprite.enabled = false;
-                option2Sprite.enabled = false;
+            
                 GameManager.Instance.actionIndex++;
                 GameManager.Instance.LoadOptions(GameManager.Instance.loadedLevelIndex);
                 
@@ -77,6 +80,7 @@ public class UIManager : MonoBehaviour
         LevelComplete.SetActive(false);
         gameplay.SetActive(true);
         display.text = "";
+     
 
         Destroy(GameManager.Instance.levelObject);
         GameManager.Instance.LoadLevel(GameManager.Instance.loadedLevelIndex + 2);
@@ -101,7 +105,10 @@ public class UIManager : MonoBehaviour
 
         
     }
-
+    public void ShowLevelComplete()
+    {
+        LevelComplete.SetActive(true);
+    }
 
     public void replay()
     {

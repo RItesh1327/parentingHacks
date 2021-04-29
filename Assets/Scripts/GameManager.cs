@@ -33,17 +33,18 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(int levelNo)
     {
-        levelObject = Instantiate(DataManager.levels[levelNo - 1].LevelPrefab);
+        loadedLevelIndex = levelNo - 1;
 
-        loadedLevelIndex = levelNo-1;
+        levelObject = Instantiate(DataManager.levels[loadedLevelIndex].LevelPrefab);
 
         LoadOptions(loadedLevelIndex);
+
+        DataManager.levels[levelNo].actions[actionIndex].animator = GameObject.FindObjectOfType<Animator>();
     }
 
     public void LoadOptions(int levelNo)
     {
         UIManager.option1Sprite.sprite = DataManager.levels[levelNo].actions[actionIndex].option1;
-       
         UIManager.option2Sprite.sprite = DataManager.levels[levelNo].actions[actionIndex].option2;
     }
 

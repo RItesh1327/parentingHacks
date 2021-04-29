@@ -1,0 +1,22 @@
+level 1 - animation of little girl,sitting down with a scratch on her hand and a band aid is being applied to it (band aid with design on it ) .
+
+level 2 - idle animation , character holding brush.
+
+level 3 - character sitting on a chair without belt and an animation of belt attaching to chair
+
+level 4 - idle animation with apron getting attached.
+
+level 5 - idle animation.
+
+level 6 - idle animation.
+
+level 7 - girl laying on the bed without eye cover and with eye cover getting on.
+
+level 8 - idle animation.
+
+level 9 - boy idle character without swimming shorts and with shorts and holding volley ball and towel around his neck.
+
+level 10 - boy sitting in a ballon bath tube and standing with wearing towel. 
+
+
+*** only level 9 and 10 boy is animated rest is girl.

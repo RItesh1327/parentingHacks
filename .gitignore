@@ -3,3 +3,5 @@ Temp
 Assembly-CSharp-firstpass.csproj
 Assembly-CSharp.csproj
 parentingHacks.sln
+.vs
+obj

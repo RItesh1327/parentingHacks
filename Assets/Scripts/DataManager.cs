@@ -11,17 +11,17 @@ public class DataManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
-  
+
 }
 
 [System.Serializable]
@@ -35,8 +35,9 @@ public class Level
 [System.Serializable]
 public class Options
 {
-    public Sprite option1,option2;
+    public Sprite option1, option2;
     public int correct;
+    public Animator animator;
 }
 
 public enum FunctionType

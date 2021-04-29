@@ -1,0 +1,3 @@
+partner hacker Game
+
+* Turn the object (Tshirt, short and ball ..etc)on/off when you use animation

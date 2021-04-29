@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: c99d6ab0a9bc44a4fab4e3f4e86fcef3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Point Soft DEMO
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e1c63fb3f46c77a4fbb1665d44cf1aa6, type: 3}
+  - {fileID: 12800000, guid: 92de4f9b21617fa459ff0c23d1b12879, type: 3}
+  - {fileID: 12800000, guid: a7e6584f675f1914cbd377780cf31531, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

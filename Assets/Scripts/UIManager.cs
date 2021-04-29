@@ -50,11 +50,10 @@ public class UIManager : MonoBehaviour
 
             display.text = "correct";
 
-            
-            anim.SetBool("band", true);
-            
-           
-           
+            GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions[GameManager.Instance.actionIndex].animator.SetBool("band", true);
+
+
+
             if ((GameManager.Instance.actionIndex + 1) < GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions.Length)
             {
                 display.text = "";

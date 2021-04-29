@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
         LoadOptions(loadedLevelIndex);
 
-        DataManager.levels[levelNo].actions[actionIndex].animator = GameObject.FindObjectOfType<Animator>();
+        DataManager.levels[levelNo].actions[actionIndex].animator = levelObject.GetComponentInChildren<Animator>();
     }
 
     public void LoadOptions(int levelNo)

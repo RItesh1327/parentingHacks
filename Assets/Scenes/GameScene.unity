@@ -1457,7 +1457,7 @@ MonoBehaviour:
   display: {fileID: 655699024}
   progress1: {fileID: 1449775229}
   progress2: {fileID: 292043400}
-  anim: {fileID: 1339626211}
+  anim: {fileID: 0}
 --- !u!1 &545810220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,56 +3700,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334438392}
   m_CullTransparentMesh: 0
---- !u!1 &1339626210
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1339626212}
-  - component: {fileID: 1339626211}
-  m_Layer: 0
-  m_Name: animator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &1339626211
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339626210}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 76b247e1786444348abdfdea005fe08d, type: 3}
-  m_Controller: {fileID: 9100000, guid: b87cc48c279695c40b70fb7a0cd3241a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &1339626212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339626210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 735.1218, y: 561.55396, z: 573.6775}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1368518006
 GameObject:
   m_ObjectHideFlags: 0
@@ -5164,102 +5114,126 @@ MonoBehaviour:
     - option1: {fileID: 21300000, guid: 5c6fb67f8ad81b14ebb94863430e545d, type: 3}
       option2: {fileID: 21300000, guid: fdd9da45d397d3a458fa3285d9b4f416, type: 3}
       correct: 0
+      animator: {fileID: 0}
     sample: 00000000
   - LevelPrefab: {fileID: 3069788434383184715, guid: 0b504b35687b1364481eaf484a2679e3, type: 3}
     actions:
     - option1: {fileID: 21300000, guid: 88055cf7b336f624189f569c6cabf578, type: 3}
       option2: {fileID: 21300000, guid: 529439b091f0ed747a1676ec466b1cd4, type: 3}
       correct: 1
+      animator: {fileID: 0}
     sample: 00000000
   - LevelPrefab: {fileID: 958668522732347346, guid: 8f43c0831a923ce4db165fcdd5334a65, type: 3}
     actions:
     - option1: {fileID: 21300000, guid: 42df08a5a6ed7b348b0e0cd7992e1127, type: 3}
       option2: {fileID: 21300000, guid: c665495303794db48b3357235ef17584, type: 3}
       correct: 0
+      animator: {fileID: 0}
     sample: 
   - LevelPrefab: {fileID: 5457116794218202220, guid: c38a0134b544de3419a6212c0b49165e, type: 3}
     actions:
     - option1: {fileID: 21300000, guid: 1c854257d915ba140a6c3c3fd4210a84, type: 3}
       option2: {fileID: 21300000, guid: 2b7e16ae791eb484fa737d5b32b56f80, type: 3}
       correct: 1
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: e8ec4060a73480942954cce9448d9c6f, type: 3}
       option2: {fileID: 21300000, guid: ecb3b02bba40d384395d8a942bc9cf98, type: 3}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: 9450befeaec536043b00f6d85952fe7c, type: 3}
       option2: {fileID: 21300000, guid: ecb3b02bba40d384395d8a942bc9cf98, type: 3}
       correct: 1
+      animator: {fileID: 0}
     sample: 
   - LevelPrefab: {fileID: 3385614829790650367, guid: ed8a876f2f422fd4fb19b77c8c09ccd3, type: 3}
     actions:
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     sample: 
   - LevelPrefab: {fileID: 3696133411914296656, guid: 15429761f7b39b94a9db2f0b556a3c52, type: 3}
     actions:
     - option1: {fileID: 21300000, guid: ecb3b02bba40d384395d8a942bc9cf98, type: 3}
       option2: {fileID: 21300000, guid: 8e0eee39ea22ee74b8a6e373f5414b18, type: 3}
       correct: 1
+      animator: {fileID: 0}
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     sample: 
   - LevelPrefab: {fileID: 3696133411914296656, guid: 15429761f7b39b94a9db2f0b556a3c52, type: 3}
     actions:
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 0}
       option2: {fileID: 0}
       correct: 0
+      animator: {fileID: 0}
     sample: 
   - LevelPrefab: {fileID: 3696133411914296656, guid: 15429761f7b39b94a9db2f0b556a3c52, type: 3}
     actions:
     - option1: {fileID: 21300000, guid: 14208631c0b584a45a93500d9cb8e906, type: 3}
       option2: {fileID: 21300000, guid: 57e5a58152af8f94095273a9a8777958, type: 3}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: 48207d774d7ec83429ca2bd6b17dca66, type: 3}
       option2: {fileID: 21300000, guid: 342991b072c7cc14fad377dce9dcce32, type: 3}
       correct: 1
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: a0d018c6088026d44a420f3543a94dc9, type: 3}
       option2: {fileID: 21300000, guid: c8e18c61585804744a8cdcfb722464f4, type: 3}
       correct: 0
+      animator: {fileID: 0}
     sample: 
   - LevelPrefab: {fileID: 3696133411914296656, guid: 15429761f7b39b94a9db2f0b556a3c52, type: 3}
     actions:
     - option1: {fileID: 21300000, guid: 3d83a9c4f9b730a408c69af3d83c22da, type: 3}
       option2: {fileID: 21300000, guid: 71bbff9c928d5934aa18b7e69e44c9e6, type: 3}
       correct: 1
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: e3531a8ea40e69940b4106ca23292c79, type: 3}
       option2: {fileID: 21300000, guid: 9f8ca234e969b7949bc1575241c6f8d8, type: 3}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: ddf4f32b4f3b20940aea25c93e1c5e00, type: 3}
       option2: {fileID: 21300000, guid: 7040e1e74e17c97429514351780335cb, type: 3}
       correct: 1
+      animator: {fileID: 0}
     sample: 
   - LevelPrefab: {fileID: 3696133411914296656, guid: 15429761f7b39b94a9db2f0b556a3c52, type: 3}
     actions:
     - option1: {fileID: 21300000, guid: d8c792f34d360ec4382f8471f934c2c0, type: 3}
       option2: {fileID: 21300000, guid: 58afc88f324760a4b855140322b960c9, type: 3}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: b4f71c06535fbcf4592b2e2f0fb82529, type: 3}
       option2: {fileID: 21300000, guid: 6591796c198070944b14d6b23898f9b3, type: 3}
       correct: 0
+      animator: {fileID: 0}
     - option1: {fileID: 21300000, guid: 7040e1e74e17c97429514351780335cb, type: 3}
       option2: {fileID: 21300000, guid: 5db78820101125445aa679fa509726e5, type: 3}
       correct: 1
+      animator: {fileID: 0}
     sample: 
 --- !u!4 &1862432262
 Transform:

@@ -55,13 +55,15 @@ public class GameManager : MonoBehaviour
         levelObject = Instantiate(DataManager.levels[loadedLevelIndex].LevelPrefab);
 
         LoadOptions(loadedLevelIndex);
-        
-
-        DataManager.levels[loadedLevelIndex].actions[actionIndex].animator = levelObject.GetComponentInChildren<Animator>();
-      //  DataManager.levels[loadedLevelIndex].actions[actionIndex].display = GameObject.Find("Wrong");
 
 
-        
+        foreach (Options option in DataManager.levels[loadedLevelIndex].actions)
+        {
+            option.animator = levelObject.GetComponentInChildren<Animator>();
+        }
+
+
+
     }
 
     public void LoadOptions(int levelNo)

@@ -115,22 +115,22 @@ public class UIManager : MonoBehaviour
 
                     if (GameManager.Instance.actionIndex == 0)
                     {
-                    GameManager.Instance.Light1.SetActive(false);
-                    //  towel.GetComponent<SkinnedMeshRenderer>().enabled = false;
-                    //    GameManager.Instance.PlayAnim("short",true);
-                }
+                        GameManager.Instance.Light1.SetActive(false);
+                        towel.GetComponent<SkinnedMeshRenderer>().enabled = false;
+                        GameManager.Instance.PlayAnim("short", true);
+                    }
                     else  if (GameManager.Instance.actionIndex == 1)
                     {
-                    GameManager.Instance.Light2.SetActive(false);
-                    //  necktowel.GetComponent<SkinnedMeshRenderer>().enabled = true;
-                    //     GameManager.Instance.PlayAnim("towel",true);
-                }
+                        GameManager.Instance.Light2.SetActive(false);
+                        necktowel.GetComponent<SkinnedMeshRenderer>().enabled = true;
+                        GameManager.Instance.PlayAnim("towel", true);
+                    }
                     else  if (GameManager.Instance.actionIndex == 2)
                     {
-                    GameManager.Instance.Light3.SetActive(false);
-                    //  ball.GetComponent<MeshRenderer>().enabled = true;
-                    // GameManager.Instance.PlayAnim("ball");
-                }
+                        GameManager.Instance.Light3.SetActive(false);
+                        ball.GetComponent<MeshRenderer>().enabled = true;
+                        //GameManager.Instance.PlayAnim("ball");
+                    }
                 }
             
 

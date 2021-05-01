@@ -108,27 +108,27 @@ public class UIManager : MonoBehaviour
 
             // LEVEL 9......................
             if (GameManager.Instance.loadedLevelIndex == 8)
-            {
-                GameObject towel = GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions[0].display = GameObject.Find("towel");
-                GameObject necktowel = GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions[1].display = GameObject.Find("necktowel");
-                GameObject ball = GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions[2].display = GameObject.Find("volleyball");
+                {
+                    GameObject towel = GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions[0].display = GameObject.Find("towel");
+                    GameObject necktowel = GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions[1].display = GameObject.Find("necktowel");
+                    GameObject ball = GameManager.Instance.DataManager.levels[GameManager.Instance.loadedLevelIndex].actions[2].display = GameObject.Find("volleyball");
 
-                if (GameManager.Instance.actionIndex == 0)
-                {
-                    towel.GetComponent<SkinnedMeshRenderer>().enabled = false;
-                    GameManager.Instance.PlayAnim("short",true);
+                    if (GameManager.Instance.actionIndex == 0)
+                    {
+                        towel.GetComponent<SkinnedMeshRenderer>().enabled = false;
+                        GameManager.Instance.PlayAnim("short",true);
+                    }
+                    else  if (GameManager.Instance.actionIndex == 1)
+                    {
+                        necktowel.GetComponent<SkinnedMeshRenderer>().enabled = true;
+                        GameManager.Instance.PlayAnim("towel",true);
+                    }
+                    else  if (GameManager.Instance.actionIndex == 2)
+                    {
+                        ball.GetComponent<MeshRenderer>().enabled = true;
+                        // GameManager.Instance.PlayAnim("ball");
+                    }
                 }
-                else  if (GameManager.Instance.actionIndex == 1)
-                {
-                    necktowel.GetComponent<SkinnedMeshRenderer>().enabled = true;
-                    GameManager.Instance.PlayAnim("towel",true);
-                }
-                else  if (GameManager.Instance.actionIndex == 2)
-                {
-                    ball.GetComponent<MeshRenderer>().enabled = true;
-                    // GameManager.Instance.PlayAnim("ball");
-                }
-            }
             
 
 
@@ -170,7 +170,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.gameplay.SetActive(true);
         GameManager.Instance.ResetProgress();
 
-        GameManager.Instance.LoadLevel(9);
+        GameManager.Instance.LoadLevel(5);
     }
   
 

@@ -94,13 +94,13 @@ public class UIManager : MonoBehaviour
                     {
                          GameManager.Instance.Light2.SetActive(false);
                     //     GameManager.Instance.Move(-0.2280466f, 0.179f, 0.4135417f, ob2, 2);
-                }
+                    }
                     if (GameManager.Instance.actionIndex == 2)
                     {
                          GameManager.Instance.Light3.SetActive(false);
                     //  GameManager.Instance.Move(-0.2280466f, 0.179f, 0.4135417f, ob3, 2);
                     GameManager.Instance.StartCoroutine(("ShowLevelComplete") ,3);
-                }
+                    }
                 }
 
 
@@ -115,19 +115,22 @@ public class UIManager : MonoBehaviour
 
                     if (GameManager.Instance.actionIndex == 0)
                     {
-                        towel.GetComponent<SkinnedMeshRenderer>().enabled = false;
-                        GameManager.Instance.PlayAnim("short",true);
-                    }
+                    GameManager.Instance.Light1.SetActive(false);
+                    //  towel.GetComponent<SkinnedMeshRenderer>().enabled = false;
+                    //    GameManager.Instance.PlayAnim("short",true);
+                }
                     else  if (GameManager.Instance.actionIndex == 1)
                     {
-                        necktowel.GetComponent<SkinnedMeshRenderer>().enabled = true;
-                        GameManager.Instance.PlayAnim("towel",true);
-                    }
+                    GameManager.Instance.Light2.SetActive(false);
+                    //  necktowel.GetComponent<SkinnedMeshRenderer>().enabled = true;
+                    //     GameManager.Instance.PlayAnim("towel",true);
+                }
                     else  if (GameManager.Instance.actionIndex == 2)
                     {
-                        ball.GetComponent<MeshRenderer>().enabled = true;
-                        // GameManager.Instance.PlayAnim("ball");
-                    }
+                    GameManager.Instance.Light3.SetActive(false);
+                    //  ball.GetComponent<MeshRenderer>().enabled = true;
+                    // GameManager.Instance.PlayAnim("ball");
+                }
                 }
             
 
@@ -170,7 +173,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.gameplay.SetActive(true);
         GameManager.Instance.ResetProgress();
 
-        GameManager.Instance.LoadLevel(5);
+        GameManager.Instance.LoadLevel(9);
     }
   
 

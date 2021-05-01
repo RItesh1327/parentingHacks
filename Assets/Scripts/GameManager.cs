@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         
 
         DataManager.levels[loadedLevelIndex].actions[actionIndex].animator = levelObject.GetComponentInChildren<Animator>();
-        DataManager.levels[loadedLevelIndex].actions[actionIndex].display = GameObject.Find("Wrong");
+      //  DataManager.levels[loadedLevelIndex].actions[actionIndex].display = GameObject.Find("Wrong");
 
 
         

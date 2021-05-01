@@ -29,15 +29,19 @@ public class Level
 {
     public GameObject LevelPrefab;
     public Options[] actions;
-    public FunctionType[] sample;
+   
 }
 
 [System.Serializable]
 public class Options
 {
     public Sprite option1, option2;
+    public string animationName;
     public int correct;
     public Animator animator;
+    public bool animation;
+    public GameObject display;
+    public string objName;
 }
 
 public enum FunctionType
